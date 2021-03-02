@@ -1,0 +1,22 @@
+:root {
+  --theme-blue: #45567d;
+  --theme-red: #be3144;
+  --theme-gray: #303841;
+  --theme-white: #f0f0f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
