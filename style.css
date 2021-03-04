@@ -19,4 +19,63 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  color: var(--theme-white);
+}
+
+#navbar {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--theme-red);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 60px;
+}
+
+#nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-link {
+  height: 60px;
+  line-height: 60px;
+  padding: 0 15px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--theme-white);
+}
+
+.nav-link:hover {
+  background-color: #cc374b;
+}
+
+#welcome-section {
+  background-color: var(--theme-gray);
+  height: 100vh;
+}
+
+#welcome-text-box {
+  margin-top: -60px;
+}
+
+#projects {
+  background-color: var(--theme-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#link-section {
+  background-color: var(--theme-gray);
+}
+
+.center-both-axes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
