@@ -136,6 +136,35 @@ h2 {
 
 #link-section {
   background-color: var(--theme-gray);
+  padding: 50px 25px 0 25px;
+  text-align: center;
+}
+
+#links-header {
+  font-size: 36px;
+}
+
+#links-subtitle {
+  font-size: 16px;
+  text-align: center;
+  margin: auto;
+  font-style: italic;
+}
+
+#links-list {
+  padding: 25px 0;
+}
+
+.profile-link {
+  color: var(--theme-white);
+  text-decoration: none;
+  font-size: 21px;
+  display: inline-block;
+  margin: 15px;
+}
+
+footer {
+  background-color: var(--theme-blue);
 }
 
 .center-both-axes {
