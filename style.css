@@ -116,34 +116,35 @@ h2 {
   border-bottom: 1px solid var(--theme-white);
 }
 
-.project-preview {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 95%;
-  margin: 10px 10px;
-}
-
 #project-thumbnail-container {
   display: grid;
   grid: 1fr / 1fr;
 }
 
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 10px 10px;
+}
+
 .project-thumbnail {
-  width: 95%;
+  width: 100%;
 }
 
 .project-title {
   background-color: var(--theme-gray);
-  padding: 15px;
   width: 100%;
+  padding: 15px;
   text-align: center;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 
-#show-all-link {
+#profile-link {
   background-color: var(--theme-gray);
   border-radius: 3px;
   color: var(--theme-white);
@@ -152,6 +153,26 @@ h2 {
   padding: 10px 20px;
   margin: 50px 0;
   align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.4s;
+}
+
+#profile-link:hover {
+  background-color: var(--theme-red);
+}
+
+#show-all-caret {
+  transition: padding 0.4s;
+  padding-right: 3px;
+  font-size: 18px;
+  padding-left: 9px;
+}
+
+#profile-link:hover #show-all-caret {
+  padding-left: 12px;
+  padding-right: 0;
 }
 
 #link-section {
@@ -185,6 +206,11 @@ h2 {
   font-size: 21px;
   display: inline-block;
   margin: 15px;
+  transition: transform 0.2s;
+}
+
+.profile-link:hover {
+  transform: translateY(5px);
 }
 
 footer {
